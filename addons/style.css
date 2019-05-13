@@ -1,0 +1,56 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+*{font-family: 'Dosis', sans-serif;}
+/* general styling */
+h1,h2,h3,h4{ color :red; font-size: 1.5em; }
+body { background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); height: 100%; margin: 0; }
+.button, .button2 {
+    background-color: #fff;
+    border-radius: 2%;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 40%;
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    padding: 1em;
+    transition: 300ms;
+}
+.button2{ background-color: lightgrey;}
+.button:hover, .button2:hover {  padding: 1.2em;}
+
+/* index */
+.index #page { margin-top: 5em; }
+/* rows */
+.index .row_1 img{ display: block; width: 50%; margin: 0 auto;}
+.index .row_2 { margin-top: 5em; }
+
+/*home*/
+.home #logo{ width: 200px; display: block; margin: 1em auto; }
+.home .row_1 { display: flex; flex-wrap: wrap; justify-content: space-evenly; }
+.home .row_1 article { width: calc(50% - 2em); margin: 1em; }
+.home .row_1{ margin: 1em;}
+.home .row_1 article img { width: 100%; object-fit: cover; height: 350px; }
+article .matchmenu{ background-color: #fff;}
+.matchmenu p { font-size: 1.2em; padding: .5em; margin: 0; }
+
+/* Media queries */
+
+@media (max-width:1200px){
+
+}
+
+@media (max-width:991px){
+.home .row_1 article img{ height: 250px;}
+}
+
+@media (max-width:770px){
+
+}
+
+@media (max-width:550px) {
+  .home .row_1 article { width: 100%; }
+}
