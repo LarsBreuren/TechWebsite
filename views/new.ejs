@@ -1,0 +1,22 @@
+<% include partials/header %>
+    <h1><%= title %></h1> 
+
+    <form method="post" action="/users/add">
+        <label>First name</label> <br>
+        <input type="text" name="first_name" required>
+        <br>
+        <label>Last name</label> <br>
+        <input type="text" name="last_name" required>
+        <br>
+        <label>Email</label> <br>
+        <input type="text" name="email" required>
+        <br>
+        <label>Leeftijd</label> <br>
+        <input type="number" name="email" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="index.html">Home</a>
+<% include partials/footer %>
+
+
