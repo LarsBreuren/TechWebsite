@@ -10,7 +10,7 @@ te genereren.
 3. Start de server via de command line/terminal
 4. Navigeer naar localhost:3000
 
-## Test
+## Testen
 Je kan het project testen door de installatie stappen te volgen en localhost te openen. Je kan nu de website benaderen en kijken of alles naar behoren werkt.
 
 ## Style sheets
