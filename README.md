@@ -1,5 +1,8 @@
-# Project tech website
+# Project tech website | Muzika
 Dit is mijn website/repository voor project web. 
+Muzika is een datingapp voor muziekliefhebbers die graag mensen willen ontmoeten met dezelfde muzieksmaak.
+Mijn project is opgebouwd met het NodeJS framework Express, hierin worden ejs files gebruikt om pagina's
+te genereren. 
 
 ## Installeren
 1. Clone de repository.
