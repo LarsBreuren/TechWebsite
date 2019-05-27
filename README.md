@@ -4,7 +4,7 @@ Dit is mijn website/repository voor project web.
 ## Installeren
 1. Clone de repository.
 2. Installeer de packages met npm install
-3. Start de server met nodemon
+3. Start de server via de command line/terminal
 4. Navigeer naar localhost:3000
 
 ## Test
