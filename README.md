@@ -19,5 +19,5 @@ De website is gemaakt met een nodejs framework genaamd express.
 In combinatie met de ejs generator worden de pagina's gegenereerd.
 
 ## Auteur
-Lars breuren 
+Lars Breuren | CMD student HvA
 
