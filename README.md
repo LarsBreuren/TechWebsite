@@ -1,7 +1,7 @@
 # Project tech website | Muzika
 Dit is mijn website/repository voor project Tech. 
 Muzika is een datingapp voor muziekliefhebbers die graag mensen willen ontmoeten met dezelfde muzieksmaak.
-Mijn project is opgebouwd met het NodeJS framework Express, hierin worden ejs files gebruikt om pagina's
+Mijn project is opgebouwd met het NodeJS framework Express.
 te genereren. 
 
 ## Installeren
@@ -10,16 +10,16 @@ te genereren.
 3. Start de server via de command line/terminal
 4. Navigeer naar localhost:3000
 
-## Test
+## Testen
 Je kan het project testen door de installatie stappen te volgen en localhost te openen. Je kan nu de website benaderen en kijken of alles naar behoren werkt.
 
 ## Style sheets
-De styling van de site bestaat volledig uit de style.css file.
-Hier vind je de standaard styling voor headers maar ook specifieke styling voor alle elementen in de site.
+De styling van de site bestaat volledig uit de /public/style.css file.
+Hier vind je de standaard styling voor headers maar ook specifieke styling voor alle elementen in de site en mediaqueries.
 
 ## Gemaakt met
 De website is gemaakt met een nodejs framework genaamd express. 
-In combinatie met de ejs generator worden de pagina's gegenereerd.
+In combinatie met EJS worden de pagina's gegenereerd.
 
 ## Auteur
 Lars Breuren | CMD student HvA
