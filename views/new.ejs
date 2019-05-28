@@ -1,21 +1,21 @@
 <% include partials/header %>
     <h1><%= title %></h1> 
-
-    <form method="get" action="profile.html">
+    <% if(errors){ %>
+        <ul>
+        <% errors.forEach(function(error){ %>
+            <li><%= error.msg %> </li>
+        <% })%>
+        </ul>
+   <% } %>
+    <form method="POST" action="/users/add">
         <label>Voornaam</label> <br>
-        <input type="text" name="first_name" required>
+        <input type="text" name="voornaam" >
         <br>
         <label>Achternaam</label> <br>
-        <input type="text" name="last_name" required>
+        <input type="text" name="achternaam" >
         <br>
         <label>Email</label> <br>
-        <input type="text" name="email" required>
-        <br>
-        <label>Leeftijd</label> <br>
-        <input type="number" name="leeftijd" required>
-        <br>
-        <label>Spotify naam</label> <br>
-        <input type="text" name="spotify_name" required>
+        <input type="text" name="email" >
         <br><br>
         <input type="submit" value="Aanmaken">
     </form>

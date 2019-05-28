@@ -1,11 +1,12 @@
 <% include partials/header %>
     <h1><%= title %></h1> 
-    <!-- <ul>
+    
     <% users.forEach(function(user){ %>
-        <li><%= user.first_name %>
-            <%= user.last_name %> </li>
-    <% })%>
-    </ul> -->
+      <article><div class="profilemenu"><p><%= user.voornaam %>
+           <%= user.achternaam %> - <a href="#" class="deleteUser" data-id="<%= user._id %>">Delete</a> </p>
+          </div>
+        </article><% })%>
+        
 
     <body class='home'>
         <div id='page'>
