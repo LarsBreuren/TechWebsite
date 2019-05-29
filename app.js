@@ -86,6 +86,8 @@ app.post('/users/add', function(req, res){
     req.checkBody('voornaam', 'Voornaam is verplicht').notEmpty();
     req.checkBody('achternaam', 'Achternaam is verplicht').notEmpty();
     req.checkBody('email', 'email is verplicht').notEmpty();
+    req.checkBody('leeftijd', 'leeftijd is verplicht').notEmpty();
+    req.checkBody('wachtwoord', 'wachtwoord is verplicht').notEmpty();
 
     let errors = req.validationErrors();
 
@@ -101,7 +103,9 @@ app.post('/users/add', function(req, res){
         let newUser = {
             voornaam: req.body.voornaam,
             achternaam: req.body.achternaam,
-            email: req.body.email
+            email: req.body.email,
+            leeftijd: req.body.leeftijd,
+            wachtwoord: req.body.leeftijd
         }
         db.users.insert(newUser, function(err, result){
             if(err){

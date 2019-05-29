@@ -1,65 +1,20 @@
 <% include partials/header %>
-    <h1><%= title %></h1> 
-    
-    <% users.forEach(function(user){ %>
-      <article><div class="profilemenu"><p><%= user.voornaam %>
-           <%= user.achternaam %> - <a href="#" class="deleteUser" data-id="<%= user._id %>">Delete</a> </p>
-          </div>
-        </article><% })%>
-        
-
     <body class='home'>
+        <h1><%= title %></h1> 
         <div id='page'>
           <section class="row_1">
-      
-            <article>
-              <img src='images/profiles/profile1.jpg'>
-              <div class="profilemenu">
-                <div class='details'>
-                        <p> Melissa <b> 23 </b> </p>
-                </div>
-                <div class="options">
-                    <img src="images/icons/matches-black.png">
-                </div>
-              </div>
-            </article>
-      
-            <article>
-                <img src='images/profiles/profile2.jpg'>
-                <div class="profilemenu">
-                        <div class='details'>
-                                <p> Bianca <b> 21 </b> </p>
+              <% users.forEach(function(user){ %>
+                <article>
+                    <img src='images/profiles/profile1.jpg'>
+                      <div class="metadata">
+                        <div class="details"><p> 
+                          <%= user.voornaam %> <%= user.achternaam %> <b><%= user.leeftijd %></b></p>
                         </div>
                         <div class="options">
-                            <img src="images/icons/matches-black.png">
+                          <p><a href="#" class="deleteUser" data-id="<%= user._id %>">Verwijder</a> </p>
                         </div>
-                      </div>
-            </article>
-      
-            <article>
-                <img src='images/profiles/profile3.jpg'>
-                <div class="profilemenu">
-                        <div class='details'>
-                                <p> Emma <b> 25 </b> </p>
-                        </div>
-                        <div class="options">
-                            <img src="images/icons/matches-black.png">
-                        </div>
-                      </div>
-            </article>
-      
-            <article>
-                <img src='images/profiles/profile4.jpg'>
-                <div class="profilemenu">
-                        <div class='details'>
-                                <p> jessica <b> 21 </b> </p>
-                        </div>
-                        <div class="options">
-                            <img src="images/icons/matches-black.png">
-                        </div>
-                      </div>
-            </article>
-      
+                      </div>        
+                  </article><% })%>
           </section>
         </div>
         <% include partials/stickynav %>
